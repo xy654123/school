@@ -1,0 +1,78 @@
+h1{
+    border: 1px solid aquamarine;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #808080;
+}
+ul li{
+    float: left;
+    display: block;
+    padding: 20px 30px;
+    border-right: 2px solid #323232 ;
+}
+.right{
+    float: right;
+    border-left: 2px solid #323232 ;
+}
+li:hover{
+    background-color: orange;
+}
+li:active{
+    color: orangered;
+}
+.ci{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+    height: 500px;
+    
+}
+.img .qwer{
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.img .asdf{
+    height: 100px;
+    
+}
+
+.img img:hover{
+    animation: gg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes gg {
+    50%{transform: scale(1.5);}
+}
+.drop{
+    position: relative;
+    display: inline-block;
+}
+.down{
+    display: none;
+	position: absolute;
+	background-color: #808080;
+	min-width: 160px;
+	padding: 10px;
+}
+.drop:hover .down{ display: block; }

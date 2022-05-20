@@ -1,0 +1,22 @@
+.id{
+    border: 1px solid black;
+    padding: 10px 50px;
+}
+.pass{
+    border: 1px solid black;
+    padding: 10px 50px;
+}
+.bot{
+    border-radius: 10px;
+    padding: 10px 120px;
+    background-color: cornflowerblue;
+}
+.bot:hover{
+    background-color: green;
+}
+.bot:active{
+    background-color: orangered;
+}
+.box{
+    margin-left: -155px;
+}
