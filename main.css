@@ -1,24 +1,43 @@
 h1{
     border: 1px solid aquamarine;
 }
-ul{
+.navi>ul{
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
     background-color: #808080;
 }
-ul li{
+.navi>ul>a>li{
     float: left;
     display: block;
     padding: 20px 30px;
     border-right: 2px solid #323232 ;
 }
+.navi>ul>li{
+    float: left;
+    display: block;
+    position:relative;
+    padding: 20px 30px;
+    border-right: 2px solid #323232 ;
+}
+.navi>ul>li>ul{
+    display: none;
+    list-style-type: none;
+}
+.navi>ul>li:hover>ul{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+.navi>ul>li>ul>li:hover{
+    background-color: orange;
+}
 .right{
     float: right;
     border-left: 2px solid #323232 ;
 }
-li:hover{
+.navi>ul>a>li:hover{
     background-color: orange;
 }
 li:active{
@@ -64,15 +83,3 @@ li:active{
 @keyframes gg {
     50%{transform: scale(1.5);}
 }
-.drop{
-    position: relative;
-    display: inline-block;
-}
-.down{
-    display: none;
-	position: absolute;
-	background-color: #808080;
-	min-width: 160px;
-	padding: 10px;
-}
-.drop:hover .down{ display: block; }
